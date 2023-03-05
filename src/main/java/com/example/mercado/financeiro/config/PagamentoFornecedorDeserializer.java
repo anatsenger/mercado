@@ -14,9 +14,7 @@ import java.nio.charset.StandardCharsets;
 @Slf4j
 @RequiredArgsConstructor
 public class PagamentoFornecedorDeserializer implements Deserializer<PagamentoFornecedorRequest> {
-
     private final ObjectMapper objectMapper;
-
     @Override
     public PagamentoFornecedorRequest deserialize(String s, byte[] bytes) {
         log.info("Deserializando um objeto no tópico {}", s);
